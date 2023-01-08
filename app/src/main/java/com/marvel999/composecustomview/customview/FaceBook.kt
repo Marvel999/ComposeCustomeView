@@ -1,7 +1,6 @@
 package com.marvel999.composecustomview.customview
 
 import android.graphics.Paint
-import android.graphics.Typeface
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
@@ -28,16 +27,20 @@ fun Facebook() {
         color = Color.White.toArgb()
         typeface = customTypeface
     }
-    Canvas(modifier = Modifier.size(100.dp)){
-
+    Canvas(modifier = Modifier.size(100.dp)) {
         drawRoundRect(color = Color(0xFF1776d1), cornerRadius = CornerRadius(20f, 20f))
-        drawContext.canvas.nativeCanvas.drawText("f", this.size.center.x+25, this.size.center.y+140,paint)
+        drawContext.canvas.nativeCanvas.drawText(
+            "f",
+            this.size.center.x + 25,
+            this.size.center.y + 140,
+            paint
+        )
     }
 }
 
 @Preview
 @Composable
-fun FacebookPreview(){
+fun FacebookPreview() {
     ComposeCustomViewTheme {
         Facebook()
     }
