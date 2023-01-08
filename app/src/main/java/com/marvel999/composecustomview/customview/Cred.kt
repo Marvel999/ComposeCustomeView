@@ -22,20 +22,25 @@ fun Cred() {
                 it.lineTo((this.size.width) * 0.80f, (this.size.height) * 0.60f)
                 it.lineTo((this.size.width) * 0.50f, (this.size.height) * 0.90f)
                 it.lineTo((this.size.width) * 0.20f, (this.size.height) * 0.60f)
+
                 it.close()
+
                 it.moveTo((this.size.width) * 0.40f, (this.size.height) * 0.15f)
                 it.lineTo((this.size.width) * 0.75f, (this.size.height) * 0.15f)
                 it.lineTo((this.size.width) * 0.75f, (this.size.height) * 0.30f)
+
                 it.moveTo((this.size.width) * 0.65f, (this.size.height) * 0.20f)
                 it.lineTo((this.size.width) * 0.25f, (this.size.height) * 0.20f)
                 it.lineTo((this.size.width) * 0.25f, (this.size.height) * 0.55f)
                 it.lineTo((this.size.width) * 0.50f, (this.size.height) * 0.80f)
                 it.lineTo((this.size.width) * 0.75f, (this.size.height) * 0.55f)
                 it.lineTo((this.size.width) * 0.75f, (this.size.height) * 0.45f)
+
                 it.moveTo((this.size.width) * 0.30f, (this.size.height) * 0.30f)
                 it.lineTo((this.size.width) * 0.30f, (this.size.height) * 0.50f)
                 it.lineTo((this.size.width) * 0.50f, (this.size.height) * 0.70f)
                 it.lineTo((this.size.width) * 0.68f, (this.size.height) * 0.52f)
+
                 it
             }
             drawRoundRect(color = Color.Black, cornerRadius = CornerRadius(20f, 20f))
